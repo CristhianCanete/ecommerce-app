@@ -21,3 +21,4 @@ Route::get('/', function () {
 //Router Auth
 Route::get('/login', [ConnectController::class, 'getLogin'])->name('login');
 Route::get('/register', [ConnectController::class, 'getRegister'])->name('register');
+Route::post('/register', [ConnectController::class, 'postRegister'])->name('register');
